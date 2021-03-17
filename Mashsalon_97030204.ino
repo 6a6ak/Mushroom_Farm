@@ -68,7 +68,7 @@ if( Temp>24 ){  digitalWrite(RELAY1,1);  digitalWrite(RELAY2,0);     Serial.prin
 if( Temp<23 ){  digitalWrite(RELAY2,0);  digitalWrite(RELAY1,0);     Serial.println("Wather is going to Cold ");  } 
   else {  digitalWrite(RELAY2,0); digitalWrite(RELAY1,1);  } delay(2000);  //Weather is going to a little cold so turn the heater on 
   
-if( Humi<55 ){  digitalWrite(RELAY3,1);   delay(2000); gprs.callUp("09213987312");  Serial.println("humidity is to low & call up");   } 
+if( Humi<55 ){  digitalWrite(RELAY3,1);   delay(2000); gprs.callUp("Phone Number");  Serial.println("humidity is to low & call up");   } 
 else {   digitalWrite(RELAY3,0);  //Humidity is that low and turn water coler on& fan in & fan out turn off
 //  
 //if( Humi>80 ){  digitalWrite(RELAY3,1);    Serial.println("humidity is that high ");  }
@@ -79,10 +79,10 @@ else {   digitalWrite(RELAY3,0);  //Humidity is that low and turn water coler on
 //  
 ////if( CO2<10 ){  digitalWrite(RELAY5,1);    Serial.println("CO2 is Normal ");  }   delay(2000); //CO2 is Normal 
 // //call series\\ 
-//if( Temp>28 ){    gprs.callUp("09213987312");   Serial.println("very hot"); }  
+//if( Temp>28 ){    gprs.callUp("Phone Number");   Serial.println("very hot"); }  
 //if( Temp<20 ){     Serial.println(" call and send SMS Wather is that cold ");  } 
 //if( Humi<50 ){     Serial.println(" call and send SMS Humidity  is that Hot ");  } 
-//if( Humi>85 ){      gprs.sendSMS("09213987312","Himidity "); delay(3000);  gprs.callUp("09213987312");    Serial.println("humidity is high");   } 
+//if( Humi>85 ){      gprs.sendSMS("Phone Number","Himidity "); delay(3000);  gprs.callUp("Phone Number");    Serial.println("humidity is high");   } 
 //   
 //  
 //Programing Starts//

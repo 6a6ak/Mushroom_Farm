@@ -65,7 +65,3 @@ If you use PlatformIO, add the corresponding library entries to `platformio.ini`
 ## License
 
 This project is licensed under the MIT License — see the `LICENSE` file for details: [LICENSE](LICENSE).
-
----
-
-If you want, I can update the sketch to use clearer configurable constants for thresholds and phone numbers, or change the license type. Tell me which you'd prefer.

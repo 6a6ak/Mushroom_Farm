@@ -1,4 +1,4 @@
-# Mushroom_Farm
+## Mushroom_Farm
 
 Automatic environment controller for a small mushroom farm (Arduino Uno).
 
